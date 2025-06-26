@@ -1,0 +1,54 @@
+body {
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  margin: 0;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#game {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: #222;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #0ff;
+}
+.lane {
+  position: absolute;
+  bottom: 0;
+  width: 90px;
+  height: 100%;
+  border-left: 1px solid #444;
+  border-right: 1px solid #444;
+}
+#laneQ { left: 0; }
+#laneW { left: 100px; }
+#laneE { left: 200px; }
+#laneR { left: 300px; }
+.note {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  background: #0ff;
+  border-radius: 8px;
+  left: 5px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 30px;
+  user-select: none;
+}
+#scoreboard {
+  margin-top: 10px;
+  font-size: 20px;
+}
+#instructions {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #aaa;
+}

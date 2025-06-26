@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QWER Rhythm Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>QWER Rhythm Game</h1>
+
+  <div id="scoreboard">Score: 0</div>
+  <div id="instructions">Stiskni Q, W, E, R ve správný čas, když kostka dorazí dolů</div>
+
+  <div id="game">
+    <div class="lane" id="laneQ"></div>
+    <div class="lane" id="laneW"></div>
+    <div class="lane" id="laneE"></div>
+    <div class="lane" id="laneR"></div>
+  </div>
+
+  <!-- Audio player -->
+  <div style="text-align:center; margin: 15px;">
+    <audio id="bgMusic" src="choose_your_fighter.mp3" preload="auto"></audio>
+    <button id="playPauseBtn">▶️ Přehrát / ⏸️ Pauza</button>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
